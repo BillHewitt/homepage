@@ -28,6 +28,12 @@
     top: 156px;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    /* z-index: 1000; */
+}
+
 </style>
 
 <% end %>
@@ -254,7 +260,7 @@
 
 
                     <div class="col-lg-4">
-                        <div class="sticky-top sticky-offset" style="top: 90px;">
+                        <div class="sticky" style="top:100px; z-index: -1;">
                             <div class="card-box" style="background-color: #f5f5f5;">
                                 <div class="row">
                                     <div class="col">
