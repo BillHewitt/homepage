@@ -1,0 +1,93 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropzone/dropzone.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropify/dropify.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+    @import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700');
+
+    .card.bill:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  cursor: pointer;
+}
+
+.card.card-body.text-center.bill:hover {
+    background-color: #000;
+}
+
+.row.reward:hover {
+  cursor: pointer;
+}
+
+.sticky-top {
+    top: 156px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    /* z-index: 1000; */
+}
+
+</style>
+
+<% end %>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+                <ol class="breadcrumb" style="margin-bottom: -10px;">
+                    <li class="breadcrumb-item"><a href="/admin/managecompany2">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Perks</a></li>
+                    <li class="breadcrumb-item active">Cafe Nero</li>
+                </ol>
+               
+
+                <div class="row mt-4"> 
+                    <div class="col-12">
+                        <div class="card">
+                            
+
+
+                            
+                            <h1 style="font-family: dosis;">Hello there Elsa</h1>
+
+                        </div> <!-- end card-->
+                    </div> <!-- end col-->
+                </div>
+        
+<!-- /.modal-dialog -->
+    </div>
+
+                <%- content_for :footer_js do %>
+
+                <%= javascript_include_tag 'admin/libs/dropzone/dropzone.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/dropify/dropify.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-fileuploads.init.js', 'data-turbolinks-track': 'reload' %>
+  
+<% end %>
+
+<script> 
+function replace() { 
+document.getElementById("div1").style.display="none"; 
+document.getElementById("div2").style.display="block"; 
+} 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+            
