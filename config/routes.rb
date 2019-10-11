@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  root to: 'pages#home'
+  root to: 'admin_pages#managecompany2'
 
   scope :admin do
     get '/', to: 'admin_pages#static', page: 'index'
