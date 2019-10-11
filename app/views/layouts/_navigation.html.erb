@@ -1,3 +1,13 @@
+<style>
+
+.ti-home:hover {
+    color: #00ADEE;
+    cursor: pointer;
+}
+
+</style>
+
+
 <header id="topnav">
 <!-- Topbar Start -->
 <div class="navbar-custom" style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)";>
@@ -17,23 +27,16 @@
             </li>
 
 
-
-            <li>
-                <button type="button" class="btn btn-warning waves-effect waves-light mt-2 mr-4 d-none d-lg-block
-" style="color: #3D3D36;">Admin</button>
-            </li>
-
-            <li class="notification-list">
+            <li class="notification-list" style="margin-top: 3px;">
                 <a class="nav-link" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <i class="fe-search noti-icon"></i>
+                    <i class="ti-wallet" style="font-size: 20px;"></i>
                 </a>
             </li>
 
-
             
-            <li class="dropdown notification-list">
+            <li class="dropdown notification-list" style="margin-top: 3px;">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <i class="fe-bell noti-icon"></i>
+                    <i class="ti-bell" style="font-size: 20px;"></i>
                     <span class="badge badge-primary rounded-circle noti-icon-badge">3</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-lg">
@@ -94,9 +97,9 @@
     
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="/template-assets/images/users/user-6.jpg" alt="user-image" class="rounded-circle">
+                    <img src="/template-assets/images/users/user-2.jpg" alt="user-image" class="rounded-circle">
                     <span class="pro-user-name ml-1">
-                        John Doe <i class="mdi mdi-chevron-down"></i> 
+                        Jane Black <i class="mdi mdi-chevron-down"></i> 
                     </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-profile dropdown-menu-right dropdown-xl">
@@ -155,6 +158,11 @@
                     </a>
     
                 </div>
+            </li>
+
+            <li style="margin-top: 5px;">
+                <button type="button" class="btn btn-warning waves-effect waves-light mt-2 mr-4 ml-3 d-none d-lg-block
+" style="color: #3D3D36; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);">Continue setup</button>
             </li>
     
         </ul>
@@ -270,9 +278,9 @@
     
             <li class="dropdown notification-list float-right">
                 <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="/template-assets/images/users/user-6.jpg" alt="user-image" class="rounded-circle">
+                    <img src="/template-assets/images/users/user-2.jpg" alt="user-image" class="rounded-circle">
                     <span class="pro-user-name ml-1">
-                        John Doe <i class="mdi mdi-chevron-down"></i> 
+                        Jane Black <i class="mdi mdi-chevron-down"></i> 
                     </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-profile dropdown-menu-right dropdown-xl">
@@ -329,7 +337,13 @@
             </li>
     
         </ul>
+
     
+        <!-- LOGO --> 
+        <div class="logo-box d-none d-lg-block mt-2" style="padding-top: 14px;">
+            <i class="ti-home" style="font-size: 20px;"></i>
+        </div>
+
         <!-- LOGO -->
         <div class="logo-box d-none d-lg-block">
             <a href="managecompany2.html" class="logo text-center">
@@ -343,9 +357,7 @@
                 </span>
             </a>
         </div>
-    
-            
-           
+
     </div> <!-- end container-fluid-->
 </div>
 <!-- end Topbar -->
