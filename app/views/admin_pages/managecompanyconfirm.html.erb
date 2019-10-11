@@ -1,0 +1,1113 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/jquery-toast/jquery.toast.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+
+<div class="secondary-nav">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">Manage Company</li>
+                    </ol>
+                    <h3 class="mb-0">Company Name <button type="button" class="btn btn-link waves-effect">Settings <i class="fe-settings"></i></button></h3>
+                </div>
+                <div class="col-4">
+                   <div class="card text-xs-center mt-2 float-right shadow-sm" style="max-width: 390px; min-width: 270px; margin-bottom: -10px; border-radius: 0.65rem; background-color: #f6f6ff;">
+                        <div class="card-body">
+                            <h4 class="">Company Wallet</h4>
+                            <div class="row" style="padding-top: 20px;">
+                                <div class="col-9">
+                                    <p>Call to action</p>
+                                </div>
+                                <div class="col-3">
+                                    <i class="mdi mdi-arrow-right float-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <ul class="nav nav-tabs nav-bordered">
+                <li class="nav-item">
+                    <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Insights
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                        People
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#messages-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Teams
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#give-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Give
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>
+
+
+
+<div class="wrapper less">
+    <div class="container-fluid"> 
+        <div class="tab-content">
+            <div class="tab-pane" id="home-b1">
+                 <div class="card subtle shadow-sm p-3 mb-3 bg-white rounded">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Insights</h5>
+                        <p class="card-text">This is where Insights will go.</p>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane active" id="profile-b1">
+                <div class="card subtle shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="text-secondary">
+                       
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <form class="form-inline">
+                                
+                                    <div class="form-group">
+                                        
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Teams <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Option</a>
+                                                <a class="dropdown-item" href="#">Option</a>
+                                                <a class="dropdown-item" href="#">Option</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Roles <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Team manager</a>
+                                                <a class="dropdown-item" href="#">Admin</a>
+                                                <a class="dropdown-item" href="#">Financial controller</a>
+                                            </div>
+                                        </div>
+
+                                         <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activation status <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Activated</a>
+                                                <a class="dropdown-item" href="#">Pending</a>
+                                                <a class="dropdown-item" href="#">Deactivated</a>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fe-search noti-icon"></i></div>
+                                            </div>
+                                            <input type="search" class="form-control" id="inputPassword2" placeholder="Search...">
+                                        </div>
+
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-lg-right mt-3 mt-lg-0">
+                                    <button type="button" class="btn btn-link text-muted waves-effect mr-3">Download CSV <i class="mdi mdi-download"></i></button>
+                                   
+                                    <%= link_to admin_path(page: :addpersoncompany) do %>
+                                        <button type="button" class="btn btn-primary waves-effect waves-light">Invite new <i class="fe-plus"></i></button>
+                                    <% end %>
+
+                                </div>
+                            </div><!-- end col-->
+
+                            <div class="col-lg-12">
+                                <div class="mt-2 mt-lg-2">
+
+                                <div id="dvPassport" style="display: none">   
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="small">(20 People)</span> <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                            <a class="dropdown-item" href="#">Reward</a>
+                                            <a class="dropdown-item" href="#">Benefit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Deactivate</a>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div id="dvPassport1" style="display: none">   
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="small">(1 Person)</span> <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                            <a class="dropdown-item" href="#">Reward</a>
+                                            <a class="dropdown-item" href="#">Benefit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Deactivate</a>
+                                        </div>
+                                    </div>
+                                </div> 
+
+
+
+
+                                </div>
+                            </div><!-- end col-->
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="table-responsive mt-3">
+                                    <table class="table table-borderless table-centered table-hover m-0">
+
+                                        <thead class="thead-white">
+                                            <tr>
+                                                <th>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" name="select-all" id="select-all" value="option1" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </th>
+
+
+                                                <th colspan="2">Name <i class="dripicons-chevron-down ml-3"></i></th>
+                                                <th>Teams <i class="dripicons-chevron-down ml-3"></i></th>
+                                                <th>Role <i class="dripicons-chevron-down ml-3"></i></th>
+                                                <th>Credit <i class="dripicons-chevron-down ml-3"></i></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-single">
+                                                            <input type="checkbox" id="select-one" value="option2" aria-label="Single checkbox One">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td style="width: 36px;">
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <img src="/template-assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <h5 class="m-0 font-weight-normal text-default">Person Name</h5>
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <h5 class="m-0 font-weight-normal text-default">Team Name</h5>
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <h5 class="m-0 font-weight-normal text-default">Role Name</h5>
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="btn-group float-right">
+                                                            <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#">Shout-out</a>
+                                                                <a class="dropdown-item" href="#">Reward</a>
+                                                                <a class="dropdown-item" href="#">Benefit</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                    <p class="mb-0 text-muted"><small>Invite sending on 04/06/19</small></p>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                    <p class="mb-0 text-muted"><small>Pending activation</small></p>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                               
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect text-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                               
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect text-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-single">
+                                                            <input type="checkbox" id="select-one" value="option2" aria-label="Single checkbox One">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td style="width: 36px;">
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <img src="/template-assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <h5 class="m-0 font-weight-normal text-default">Person Name</h5>
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <h5 class="m-0 font-weight-normal text-default">Team Name</h5>
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= link_to admin_path(page: :manageperson) do %>
+                                                            <h5 class="m-0 font-weight-normal text-default">Role Name</h5>
+                                                        <% end %>
+                                                    </td>
+
+                                                    <td>
+                                                        <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="btn-group float-right">
+                                                            <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#">Shout-out</a>
+                                                                <a class="dropdown-item" href="#">Reward</a>
+                                                                <a class="dropdown-item" href="#">Benefit</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                    <p class="mb-0 text-muted"><small>Invite sending on 04/06/19</small></p>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                               
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect text-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-single">
+                                                        <input type="checkbox" id="singleCheckbox1" value="option2" aria-label="Single checkbox One">
+                                                        <label></label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 36px;">
+                                                    <img src="/template-assets/images/users/user-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    <h5 class="m-0 font-weight-normal">Person Name</h5>
+                                                </td>
+
+                                                <td>
+                                                    Team Name
+                                                </td>
+
+                                                <td>
+                                                    Role Name
+                                                </td>
+
+                                                <td>
+                                                    <i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300
+                                                </td>
+
+                                               
+
+                                                <td>
+                                                    <div class="btn-group float-right">
+                                                        <button type="button" class="btn btn-outline-primary waves-effect text-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                                            <a class="dropdown-item" href="#">Reward</a>
+                                                            <a class="dropdown-item" href="#">Benefit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                        <nav>
+                            <ul class="pagination pagination-rounded justify-content-center mb-3 mt-3">
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane" id="messages-b1">
+                <div class="card subtle shadow-sm p-3 mb-3 bg-white rounded">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Teams</h5>
+                        <p class="card-text">This is where you can manage teams.</p>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane" id="give-b1">
+                <div class="card subtle shadow-sm p-3 mb-3 bg-white rounded">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Give</h5>
+                        <p class="card-text">This is where you can manage companywide benefits and rewards from.</p>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+        </div>            
+    </div> <!-- end container -->
+</div><%- content_for :footer_js do %>
+  
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-toast/jquery.toast.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/toastr.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-pickers.init.js', 'data-turbolinks-track': 'reload' %>
+
+<script type="text/javascript">
+    // Listen for click on toggle checkbox
+$('#select-all').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;                        
+        });
+    } else {
+        $(':checkbox').each(function() {
+            this.checked = false;                       
+        });
+    }
+});
+
+
+
+$(function () {
+        $("#select-all").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+$(function () {
+        $("#select-one").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport1").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport1").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+$.toast({
+    heading: 'Invite successful',
+    icon: 'success',
+    text: 'An email invition was successfully sent to Person Name!',
+    position: 'top-right',
+    loader: false, 
+    stack: false
+})
+
+
+</script>
+<% end %>

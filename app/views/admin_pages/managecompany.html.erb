@@ -1,0 +1,424 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropzone/dropzone.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropify/dropify.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+    @import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700');
+
+    .card.bill:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  cursor: pointer;
+}
+
+.card.card-body.text-center.bill:hover {
+    background-color: #000;
+}
+
+.row.reward:hover {
+  cursor: pointer;
+}
+
+</style>
+
+<% end %>
+
+    <div class="wrapper">
+        <div class="container">
+            <span class="d-lg-block">
+                
+                <div class="row mb-2 mt-2">
+                    <div class="col-12">
+                        <h1 class="mb-2 mt-2" style="font-family: dosis; font-weight: 500;">Welcome back, <span class="underline" style="border-bottom: 3px solid #00ADEE;">Jane</span>
+                        </h1>
+                    </div>
+                </div>
+
+            <div id = "3" style="display:block">
+                <div class="row mt-3 mb-4">
+                    <div class="col-lg-9"> 
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Your perks</h3>
+                            </div>
+                             <div class="col-lg-6">
+                                <a href="" class="float-right btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">See all perks</a></h4>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-3">
+                            <div class="col-lg-4">
+                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <img class="card-img-top img-fluid" src="/template-assets/images/nero.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3" style="font-family: dosis;">Your <span class="underline" style="border-bottom: 3px solid #00ADEE;">free</span> weekly coffee</h3>
+                                    
+                                            <div class="row mt-2" style="margin-bottom: -20px;">
+                                                <div class="col-lg-7">
+                                                    <p class="mt-2" style="padding-top: 12px;"><img src="/template-assets/images/voucher.png" style="max-width: 20px;"> Digital voucher</p>
+                                                </div>
+                                                 <div class="col-lg-5">
+                                                    <h2 class="float-right mt-2 mb-0" style="font-family: dosis;">Free</h2>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="col-lg-4">
+                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <img class="card-img-top img-fluid" src="/template-assets/images/odeon2.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3" style="font-family: dosis;">Your <span class="underline" style="border-bottom: 3px solid #00ADEE;">free</span> monthly cinema</h3>
+                                    
+                                            <div class="row mt-2" style="margin-bottom: -20px;">
+                                                <div class="col-lg-7">
+                                                    <p class="mt-2" style="padding-top: 12px;"><img src="/template-assets/images/voucher.png" style="max-width: 20px;"> Digital voucher</p>
+                                                </div>
+                                                 <div class="col-lg-5">
+                                                    <h2 class="float-right mt-2 mb-0" style="font-family: dosis;">Free</h2>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <img class="card-img-top img-fluid" src="/template-assets/images/hm2.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3" style="font-family: dosis;">Stay stylish</h3>
+                                    
+                                            <div class="row mt-2" style="margin-bottom: -20px;">
+                                                <div class="col-lg-7">
+                                                    <p class="mt-2" style="padding-top: 12px;"><img src="/template-assets/images/voucher.png" style="max-width: 20px;"> Digital voucher</p>
+                                                </div>
+                                                 <div class="col-lg-5">
+                                                    <h2 class="float-right mt-2 mb-0" style="font-family: dosis;">9% off</h2>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-12">
+                                <div class="card card-body text-center" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <div class="card-body">
+                                        <div class="mx-auto">
+                                            <img src="/template-assets/images/medical.png" style="max-width: 200px;">
+                                            <h4 class="card-title mb-2 pt-3" style="font-family: dosis;">Get instant, 24/7 access to our online GP service</h4>
+                                                <button onclick="replace();return false"/ type="button" class="btn btn-warning waves-effect waves-light mt-3" style="color: #3D3D36">Sign up for free</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                 <div class="row mt-2">
+                    <div class="col-lg-6">
+                        <h3>Your activity</h3>
+                    </div>
+                     <div class="col-lg-6">
+                        <a href="" class="float-right btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">See all recogntion</a></h4>
+                    </div>
+                </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-6" style="padding-right: 0px;">
+                            <div class="card text-center" style="background-color: #f5f5f5; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                <div class="card-body">
+                                    <div class="mx-auto">
+                                        <h3 class="card-title mb-2 pt-3" style="font-family: dosis;">Reward or recognise your team</h3>
+                                            <button type="button" class="btn btn-warning waves-effect waves-light mt-2 mb-5" style="color: #3D3D36">Let's go</button>
+                                        <div class="mx-auto">
+                                            <img src="/template-assets/images/ILLUSTRATION.png" class="mx-auto mb-4" style="max-width: 313px;">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-6" style="padding-left: 0px;">
+                            <div class="card" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card-body">
+                                    <div class="row reward" style="padding-top:10px; padding-bottom:5px;">
+                                        <div class="col-lg-2">
+                                            <img src="/template-assets/images/users/user-5.jpg" class="rounded-circle avatar-sm" alt="friend">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h4 style="font-family: dosis; font-weight: 600;" class="mt-0">James Martin</h4>
+                                            <p style="font-family: dosis;">Recognised by Jane Doe</p>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <p class="" style="font-family:dosis">2 days ago</p>                                           
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row reward" style="padding-top:10px; padding-bottom:5px;">
+                                        <div class="col-lg-2">
+                                            <img src="/template-assets/images/users/user-3.jpg" class="rounded-circle avatar-sm" alt="friend">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h4 style="font-family: dosis; font-weight: 600;" class="mt-0">Richard Beattie</h4>
+                                            <p style="font-family: dosis;">Recognised by Jane Doe</p>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <p class="" style="font-family:dosis">4 days ago</p>                                           
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row reward" style="padding-top:10px; padding-bottom:5px;">
+                                        <div class="col-lg-2">
+                                            <img src="/template-assets/images/users/user-2.jpg" class="rounded-circle avatar-sm" alt="friend">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h4 style="font-family: dosis; font-weight: 600;" class="mt-0">Rick James</h4>
+                                            <p style="font-family: dosis;">Recognised by Jane Doe</p>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <p class="" style="font-family:dosis">6 days ago</p>                                           
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row reward" style="padding-top:10px; padding-bottom:5px;">
+                                        <div class="col-lg-2">
+                                            <img src="/template-assets/images/users/user-1.jpg" class="rounded-circle avatar-sm" alt="friend">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h4 style="font-family: dosis; font-weight: 600;" class="mt-0">Helen Rider</h4>
+                                            <p style="font-family: dosis;">Rewarded by Jane Doe</p>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <p class="" style="font-family:dosis">12 days ago                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+
+                    
+
+
+
+            <div id = "div1" style="display:block">
+                <div class="row mt-2">
+                    <div class="col-lg-12">
+                        <div class="card card-body text-center" style="border-style: dashed; border-width: 1px; border-color: #adada2;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <h3 class="card-title mb-2 pt-3" style="font-family: dosis;">Got important news to share with your company?</h3>
+                                        <button onclick="replace();return false"/ type="button" class="btn btn-warning waves-effect waves-light mt-2 mb-5" style="color: #3D3D36">Add link or video</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "div2" style="display:none">
+                <div class="row mt-2">
+                    <div class="col-lg-4">
+                        <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <i class="fas fa-plus mt-5"></i> 
+                                    <p class="mb-5 mt-2">Add link or video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <i class="fas fa-plus mt-5"></i> 
+                                    <p class="mb-5 mt-2">Add link or video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <i class="fas fa-plus mt-5"></i> 
+                                    <p class="mb-5 mt-2">Add link or video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                </div>
+
+
+
+
+                    <div class="col-lg-3">
+                        <div class="card-box" style="background-color: #f5f5f5;">
+                            <div class="row">
+                                <div class="col">
+                                    <h4 id="todo-message" style="font-family: dosis; font-weight: 600;">My Tasks</h4>
+                                </div>
+                                <div class="col-auto mt-1">
+                                    <a href="/admin/managecompany2">
+                                        <button type="button" class="float-right btn btn-sm btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;">Complete and hide</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="todoapp">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h5 id="todo-message"><span id="todo-remaining">1</span> of <span id="todo-total">3</span> remaining</h5>
+                                    </div>
+                                </div>
+
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 506.9937496185303px;"><ul class="list-group list-group-flush slimscroll todo-list" style="max-height: 330px; overflow: hidden; width: auto; height: 506.9937496185303px;" id="todo-list"><li class="list-group-item border-0 pl-1" style="background-color: #f5f5f5;"><div class="checkbox checkbox-primary"><input class="todo-done" id="7" type="checkbox"><label for="7">Set up your teams</label></div></li><li class="list-group-item border-0 pl-1" style="background-color: #f5f5f5;"><div class="checkbox checkbox-primary"><input class="todo-done" id="6" type="checkbox"><label for="6">Recognise a top performer</label></div></li><li class="list-group-item border-0 pl-1" style="background-color: #f5f5f5;"><div class="checkbox checkbox-primary"><input class="todo-done" id="5" type="checkbox"><label for="5">Resend your invite emails</label></div></li></ul><div class="slimScrollBar" style="background-color: rgb(158, 165, 171); width: 8px; position: absolute; top: 0px; opacity: 0.4; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; height: 330px; background-position: initial initial; background-repeat: initial initial;"></div><div class="slimScrollRail" style="width: 8px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; background-color: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div>
+
+                            </div> <!-- .todoapp -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="padding: 0px;">
+                                <ul class="nav nav-tabs nav-bordered">
+                                    <li class="nav-item" style="margin-left: 20px;">
+                                        <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                            <h4>Add link</h4>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                            <h4>Add video</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button type="button" class="close" data-dismiss="modal" class="float-right" aria-hidden="true" style="margin-top: 2px; margin-right: 25px;">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home-b1">
+                                        <div class="row">
+                                            <div class="col-lg-6"> 
+                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" style="height: 245px">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple>
+                                                    </div>
+                                                    <div class="dz-message needsclick">
+                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                                        <p>Upload your image</p>
+                                                    </div>
+                                                </form>                                   
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="simpleinput">Link URL</label>
+                                                    <input type="text" id="simpleinput" class="form-control">
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="example-textarea">Description</label>
+                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show" id="profile-b1">
+                                        <div class="row">
+                                            <div class="col-lg-6"> 
+                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" style="height: 245px">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple>
+                                                    </div>
+                                                    <div class="dz-message needsclick">
+                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                                        <p>Upload a thumbnail for your video</p>
+                                                    </div>
+                                                </form>                                   
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="simpleinput">Video URL</label>
+                                                    <input type="text" id="simpleinput" class="form-control">
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="example-textarea">Description</label>
+                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" class="btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">Save as draft</a>
+                                <button type="button" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36">Save and publish</button>
+                            </div>
+                        </div>
+<!-- /.modal-content -->
+                    </div>
+<!-- /.modal-dialog -->
+                </div>
+
+                <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>Are you sure you want to hide your task bar?</h4>
+                                            <p>We'll still send you notifications
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light waves-effect" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+<!-- /.modal-dialog -->
+                </div>
+
+                <%- content_for :footer_js do %>
+
+                <%= javascript_include_tag 'admin/libs/dropzone/dropzone.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/dropify/dropify.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-fileuploads.init.js', 'data-turbolinks-track': 'reload' %>
+  
+<% end %>
+
+<script> 
+function replace() { 
+document.getElementById("div1").style.display="none"; 
+document.getElementById("div2").style.display="block"; 
+} 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+            

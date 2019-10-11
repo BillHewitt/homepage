@@ -1,0 +1,565 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'admin/libs/jquery-nice-select/nice-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/switchery/switchery.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-select/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropzone/dropzone.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropify/dropify.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+
+<div class="secondary-nav">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <span class="d-none d-lg-block">
+                <div class="row">
+                    <div class="col-8">
+                       <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><%= link_to "Manage Company", admin_path(page: :managecompany) %></li>
+                        <li class="breadcrumb-item active">Settings</li>
+                    </ol>
+                        <h3 class="mb-0">Settings
+                        <br class="d-lg-none">
+                        <br class="d-lg-none">
+                    </div>
+                    <div class="col-4">
+                       <div class="card text-xs-center mt-2 float-right shadow-sm " style="max-width: 390px; min-width: 270px; margin-bottom: -10px; border-radius: 0.65rem; background-color: #f6f6ff;">
+                            <div class="card-body d-none d-lg-block">
+                                <h4 class="">Company Wallet</h4>
+                                <div class="row" style="padding-top: 20px;">
+                                    <div class="col-9">
+                                        <p>Call to action</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <i class="mdi mdi-arrow-right float-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+            <div class="row d-lg-none">
+                <div class="col-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><%= link_to "Manage Team", admin_path(page: :manageteam) %></li>
+                        <li class="breadcrumb-item active">Settings</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row d-lg-none">
+                <div class="col-5">
+                    <h3 class="mb-4">Settings </h3>
+                </div>
+                <div class="col-7">
+                    <button type="button" class="btn btn-link waves-effect mt-2 float-right"><span class=""> <i class="mdi mdi-wallet-outline" style="font-size:17px; margin-top: -13px;"></i> </span></button>
+                </div>
+            </div>
+
+          <nav class="tabbable">
+            <ul class="nav nav-tabs nav-bordered">
+                <li class="nav-item">
+                    <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                        Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#extra-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                        Identity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                        Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#messages-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Integrations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#give-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Billing
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div> 
+</div>
+
+
+
+<div class="wrapper less">
+    <div class="container-fluid"> 
+        <div class="tab-content">
+            <div class="tab-pane active" id="home-b1">
+                 <div class="card subtle">
+                    <div class="card-body">
+                        
+
+                        <div class="row">
+                            <div class="col-lg-4 col-xl-4">
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <label for="simpleinput">Company name <span class="required-mark">*</span></label>
+                                        <input type="text" id="simpleinput" class="form-control" placeholder="Company name">
+                                    </div>
+
+                                    
+                                    <div class="form-group mb-3">
+                                        <label for="example-textarea">Welcome email <span class="required-mark">*</span></label>
+                                        <a>
+                                            <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="This is the message that all your people are sent once you invite them to Perkbox. Feel free to customise it and give it a little of your own personality." data-original-title="">
+                                              <u>What's this for?</u>
+                                            </small>
+                                        </a>
+                                        <textarea id="textarea" class="form-control" maxlength="225" rows="8" placeholder="You've been signed up to Perkbox because your company thinks you deserve it.
+
+Having a Perkbox account means you get access to hundreds of exclusive perks, plus a ton of fun surprises we won't spoil here.
+
+You also have access to a 24/7 GP at hand with Perkbox Medical! So go check it out.
+
+This is all free for you to use, all you need to do is activate your account and get exploring!."></textarea>
+                                        <button type="button" class="btn btn-link waves-effect float-right mt-2"><span class="d-none d-lg-block">Reset to default text </span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                         <div class="row">
+                            <div class="col-lg-5">
+                                <hr>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                                <label>Office location(s)</label>
+                                <a>
+                                            <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="You may have more than one office. Choose your locations so we can help you manage your users better." data-original-title="">
+                                              <u>What's this for?</u>
+                                            </small>
+                                        </a>
+                                <select class="form-control select2-multiple" data-toggle="select2" multiple data-placeholder="Choose ...">
+                                            <optgroup label="UK">
+                                                <option value="AK">London</option>
+                                                <option value="HI">Sheffield</option>
+                                            </optgroup>
+                                            <optgroup label="France">
+                                                <option value="AK">Le London</option>
+                                                <option value="HI">Le Sheffield</option>
+                                            </optgroup>
+                                            <optgroup label="Australia">
+                                                <option value="CA">City</option>
+                                                <option value="NV">City</option>
+                                                <option value="OR">City</option>
+                                                <option value="WA">City</option>
+                                            </optgroup>
+                                            <optgroup label="America">
+                                                <option value="AZ">City</option>
+                                                <option value="CO">City</option>
+                                                <option value="ID">City</option>
+                                                <option value="MT">City</option>
+                                                <option value="NE">City</option>
+                                                <option value="NM">City</option>
+                                                <option value="ND">City</option>
+                                                <option value="UT">City</option>
+                                                <option value="WY">City</option>
+                                            </optgroup>
+                                            <optgroup label="Australia">
+                                                <option value="AZ">City</option>
+                                                <option value="CO">City</option>
+                                                <option value="ID">City</option>
+                                                <option value="MT">City</option>
+                                                <option value="NE">City</option>
+                                                <option value="NM">City</option>
+                                                <option value="ND">City</option>
+                                                <option value="UT">City</option>
+                                                <option value="WY">City</option>
+                                            </optgroup>
+                                        </select>
+
+                                
+                                <div class="row mb-3">
+                                    <div class="col-lg-4">
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <label>Language</label> <br>
+                                            <select class="wide" data-plugin="customselect">
+                                                <option value="3">English</option>
+                                                <option value="1">French</option>
+                                                <option value="2">Spanish</option>
+                                                <option value="4">Australianglish</option>
+                                            </select>
+                                            <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label>Date format</label> <br>
+                                            <select class="wide" data-plugin="customselect">
+                                                <option value="3">MM/DD/YYYY</option>
+                                                <option value="1">DD/MM/YYYY</option>
+                                            </select>
+                                            <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label>Time format</label> <br>
+                                            <select class="wide" data-plugin="customselect">
+                                                <option value="3">12h (am/pm)</option>
+                                                <option value="1">24h</option>
+                                            </select>
+                                            <div class="clearfix"></div>
+                                    </div>
+
+                                </form>
+
+                                <span class="d-none d-lg-block">
+                                        <a href="/admin/managecompanysettings">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light float-right mt-4 ml-2">Save </button>
+                                        </a>
+
+                                        <button type="button" class="btn btn-outline-secondary waves-effect waves-light float-right mt-4">Cancel </button>
+
+                                        <button type="button" class="btn btn-outline-secondary waves-effect waves-light float-left mt-4">Deactivate account </button>
+                                </span>
+
+                                <span class="d-lg-none">
+                                        
+                                        <button type="button" class="btn btn-primary btn-block waves-effect waves-light mt-4">Save </button>    
+                                        
+
+                                        <button type="button" class="btn btn-outline-secondary btn-block waves-effect waves-light mt-2">Cancel </button>
+
+                                        <button type="button" class="btn btn-outline-secondary btn-block waves-effect waves-light mt-5">Deactivate account </button>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        
+
+
+
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane" id="extra-b1">
+                <div class="card subtle shadow-sm">
+                    <div class="card-body">
+                        
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>Company logo</label>
+                                <form action="/" method="post" class="dropzone mb-3" id="myAwesomeDropzone">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple>
+                                    </div>
+
+                                    <div class="dz-message needsclick">
+                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                        <h4>Upload your company logo.</h4>
+                                        <span class="text-muted font-13">(We recommend you upload a transparent PNG file with the dimensions of 300x600px.)</span>
+                                    </div>
+                                </form>
+
+                                
+
+                                <div class="form-group mb-3">
+                                    <label>Primary colour</label>
+                                    <div id="component-colorpicker" class="input-group" title="Using format option">
+                                        <input type="text" id="hexa-colorpicker" class="form-control" value="#4a81d4">
+                                        <span class="input-group-append">
+                                            <span class="input-group-text colorpicker-input-addon"><i></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-link waves-effect float-right mt-0"><span class="d-none d-lg-block">Preview company branding </span></button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                    <div class="col-lg-4">
+                                        <hr>
+                                    </div>
+                                </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Company values placeholder</h5>
+                                        <p class="card-text">This is where you'll be able to add, edit and delete company values.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+
+                                    <span class="d-none d-lg-block">
+                                        <a href="/admin/managecompanysettings">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light float-right mt-4 ml-2">Save </button>
+                                        </a>
+
+                                        <button type="button" class="btn btn-outline-secondary waves-effect waves-light float-right mt-4">Cancel </button>
+
+                                    </span>
+
+                                    <span class="d-lg-none">
+                                            
+                                            <button type="button" class="btn btn-primary btn-block waves-effect waves-light mt-4">Save </button>    
+                                            
+
+                                            <button type="button" class="btn btn-outline-secondary btn-block waves-effect waves-light mt-2">Cancel </button>
+
+                                    </span>
+
+                                    </div>
+                                </div>
+
+
+
+                            
+
+                    </div>
+
+
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane" id="profile-b1">
+                <div class="card subtle">
+                    <div class="card-body text-secondary">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Role management placeholder</h5>
+                                        <p class="card-text">The ability to define roles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Feature visability placeholder</h5>
+                                        <p class="card-text">The ability to toggle on certain features for different roles/teams/locations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Job titles placeholder</h5>
+                                        <p class="card-text">To setup and define what job titles you have in your company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane" id="messages-b1">
+                <div class="card subtle">
+                    <div class="card-body text-secondary">
+                        
+                        <div class="card">
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Software integrations placeholder</h5>
+                                <p class="card-text">Manage Slack, Bamboo HR etc.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Logon placeholder</h5>
+                                <p class="card-text">SSO, Gmail etc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane" id="give-b1">
+                <div class="card">
+                    <div class="card-body text-secondary">
+                        
+                        <div class="card">
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Invoices placeholder</h5>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Payment methods placeholder</h5>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Activity placeholder</h5>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Reports placeholder</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+        </div>            
+    </div> <!-- end container -->
+</div><%- content_for :footer_js do %>
+  
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-knob/jquery.knob.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-sparkline/jquery.sparkline.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.resize.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.time.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.tooltip.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.selection.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.crosshair.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/dashboard-1.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-nice-select/jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/switchery/switchery.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/autocomplete/jquery.autocomplete.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/dropzone/dropzone.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/dropify/dropify.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-fileuploads.init.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-pickers.init.js', 'data-turbolinks-track': 'reload' %>
+
+<script type="text/javascript">
+    // Listen for click on toggle checkbox
+$('#select-all').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;                        
+        });
+    } else {
+        $(':checkbox').each(function() {
+            this.checked = false;                       
+        });
+    }
+});
+
+
+$('#select-all1').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;                        
+        });
+    } else {
+        $(':checkbox').each(function() {
+            this.checked = false;                       
+        });
+    }
+});
+
+
+$(function () {
+        $("#select-all").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+$(function () {
+        $("#select-all1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport2").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport2").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+$(function () {
+        $("#select-one").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport1").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport1").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+</script>
+<% end %>

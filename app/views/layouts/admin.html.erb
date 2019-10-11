@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Prototype</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <%= yield :head_css %>
+    <%= stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= render 'layouts/navigation' %>
+
+    <%= yield %>
+
+    <div class="rightbar-overlay"></div>
+
+    <%= render 'layouts/admin/footer' %>
+    <%= render 'layouts/admin/right_sidebar'%>
+    <%= render 'layouts/admin/right_sidebar1'%>
+    
+    <%= javascript_include_tag 'admin/vendor.js', 'data-turbolinks-track': 'reload' %>
+    <%= yield :footer_js %>
+    <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+
+  </body>
+</html>

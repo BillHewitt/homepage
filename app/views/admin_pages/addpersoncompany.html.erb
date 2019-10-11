@@ -1,0 +1,888 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/jquery-nice-select/nice-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/switchery/switchery.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-select/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/jquery-toast/jquery.toast.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropzone/dropzone.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'admin/libs/jquery-nice-select/nice-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/switchery/switchery.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-select/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropzone/dropzone.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/dropify/dropify.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+
+<div class="secondary-nav">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <span class="d-none d-lg-block">
+                <div class="row">
+                    <div class="col-8">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">Manage Company</li>
+                        </ol>
+                        <h3 class="mb-0">Company Name 
+                            <%= link_to admin_path(page: :managecompanysettings) do %>
+                                <button type="button" class="btn btn-link waves-effect"><span class="d-none d-lg-block">Settings <i class="fe-settings"></i> </span></button><button type="button" class="btn btn-link waves-effect float-right"></button>
+                            <% end %>
+                        </h3>
+                        <br class="d-lg-none">
+                        <br class="d-lg-none">
+
+                        
+
+                    </div>
+                    <div class="col-4">
+                       <div class="card text-xs-center mt-2 float-right shadow-sm " style="max-width: 390px; min-width: 270px; margin-bottom: -10px; border-radius: 0.65rem; background-color: #f6f6ff;">
+                            <div class="card-body d-none d-lg-block">
+                                <h4 class="">Company Wallet</h4>
+                                <div class="row" style="padding-top: 20px;">
+                                    <div class="col-9">
+                                        <p>Call to action</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <i class="mdi mdi-arrow-right float-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+            <div class="row d-lg-none">
+                <div class="col-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">Manage Company</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row d-lg-none">
+                <div class="col-5">
+                    <h3 class="mb-4">Company Name </h3>
+                </div>
+                <div class="col-7">
+                    <button type="button" class="btn btn-link waves-effect mt-2 float-right"><span class=""> <i class="mdi mdi-wallet-outline" style="font-size:17px; margin-top: -13px;"></i> </span></button>
+                    <%= link_to admin_path(page: :managecompanysettings) do %>
+                        <button type="button" class="btn btn-link waves-effect mt-2 float-right"><span class=""> <i class="fe-settings"></i> </span></button>
+                    <% end %>
+                </div>
+            </div>
+
+          <nav class="tabbable">
+            <ul class="nav nav-tabs nav-bordered">
+                <li class="nav-item">
+                    <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Insights
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                        People
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#messages-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Teams
+                    </a>
+                </li>
+                <li class="nav-item" style="min-width: 165px">
+                    <a href="#give-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        Benefits & Rewards
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div> 
+</div>
+
+
+
+<div class="wrapper less">
+    <div class="container-fluid"> 
+        <div class="tab-content">
+            <div class="tab-pane" id="home-b1">
+                 <div class="card subtle">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Insights</h5>
+                        <p class="card-text">This is where Insights will go.</p>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+            <div class="tab-pane active" id="profile-b1">
+                
+
+                       
+                        <div class="row">
+                            <div class="col-lg-8"> 
+                                <div class="card subtle">
+                                    <div class="card-body">
+                                        <h3 class="mb-3 mt-0"><%= link_to admin_path(page: :managecompany) do %>
+                                            <button type="button" class="btn btn-link waves-effect"><i class="mdi mdi-chevron-left md-36" style="font-size: 30px; margin-left: -20px;"></i></button>
+                                            <% end %> Invite new person
+                                        </h3>
+
+                                        <div class="row">
+                                            <div class="col-lg-6 col-xl-6">
+                                                <form>
+
+                                                    <div class="form-group mb-3">
+                                                        <label for="simpleinput">First name <span class="required-mark">*</span></label>
+                                                        <input type="text" id="simpleinput" class="form-control" placeholder="First name">
+                                                    </div>
+
+                                                    <div class="form-group mb-3">
+                                                        <label for="simpleinput">Last name <span class="required-mark">*</span></label>
+                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Last name">
+                                                    </div>
+
+                                                    <div class="form-group mb-3">
+                                                        <label for="example-email">Email address <span class="required-mark">*</span></label>
+                                                        <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email address">
+                                                    </div>
+
+                                                    <form>
+                                                        <div class="form-group mb-3">
+                                                            <label>Choose team(s)</label> <br>
+                                                            <select class="form-control select2-multiple wide" data-toggle="select2" multiple data-placeholder="Choose teams...">
+                                                                    <optgroup label="Teams">
+                                                                        <option value="AK">Team 1</option>
+                                                                        <option value="HI">Team 2</option>
+                                                                    </optgroup>
+                                                                </select>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </form>
+
+
+
+                                                     
+
+
+                                                    <div class="form-group mb-3">
+                                                        <label for="simpleinput">Choose additional role(s)</label>
+                                                                    <a>
+                                                                        <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="Here's a link to a video or article explaining things and giving examples." data-original-title="">
+                                                                          <u>Help me get the best out of roles</u>
+                                                                        </small>
+                                                                    </a>
+
+                                                        <div class="checkbox checkbox-primary ml-1 mb-2 mt-1">
+                                                            <input id="checkbox3" type="checkbox">
+                                                            <label for="checkbox3">
+                                                                Admin
+                                                            </label>
+                                                        </div>
+
+
+
+                                                        <div id="dvPassport3" style="display: none">   
+                                                            <div class="form-group mb-3 mt-2 ml-3">
+                                                                <label>Choose your admin type</label> <br>
+                                                                <div class="radio radio-blue ml-1 mb-1">
+                                                                    <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                                    <label for="inlineRadio2"> Global <i class="mdi mdi-help-circle text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Global admins have complete control over the platform for managing teams, users and company settings. To access invoicing and credit management, they will also need to be a financial controller."></i></label>
+                                                                </div>
+                                                                <div class="radio radio-blue ml-1 mb-1">
+                                                                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline">
+                                                                    <label for="inlineRadio1"> Restricted <i class="mdi mdi-help-circle text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restricted admins have limited functionality over the platform for managing teams, users and company settings."></i></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="checkbox checkbox-primary ml-1 mb-2">
+                                                            <input id="checkbox2" type="checkbox">
+                                                            <label for="checkbox2">
+                                                                Team manager <i class="mdi mdi-help-circle text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Team managers receive all insights from their primary team and the sub teams within it. They can reward, recognise and distribute credit amongst their team(s) and control their specific team settings. They cannot invite new users to the platform."></i>
+                                                            </label>
+                                                        </div>
+
+                                                        <div id="dvPassport1" style="display: none">   
+                                                            <div class="form-group mb-3 mt-2 ml-3">
+                                                                <label>For the following team(s)</label> <br>
+                                                                <select class="form-control select2-multiple wide 2" style="width: 380px;" data-toggle="select2" multiple data-placeholder="Choose teams...">
+                                                                        <optgroup label="Teams">
+                                                                            <option value="AK">Team 1</option>
+                                                                            <option value="HI">Team 2</option>
+                                                                        </optgroup>
+                                                                    </select>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+                                                        <div class="checkbox checkbox-primary ml-1 mb-0">
+                                                            <input id="checkbox4" type="checkbox">
+                                                            <label for="checkbox4">
+                                                                Financial controller </i>
+                                                            </label>
+                                                        </div>
+
+                                                        <div id="dvPassport2" style="display: none">   
+                                                            <div class="form-group mb-2 mt-2 ml-3">
+                                                                <label>Choose your financial controller type</label> <br>
+                                                                <div class="radio radio-blue ml-1 mb-1">
+                                                                    <input type="radio" id="inlineRadio3" value="option2" name="radioInline" onclick="show1();">
+                                                                    <label for="inlineRadio3"> Global <i class="mdi mdi-help-circle text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Global financial controllers have access to all invoicing information such as contract, payment details and payment settings. They are also able to upload, approve and distribute credit amongst teams."></i></label>
+                                                                </div>
+                                                                <div class="radio radio-blue ml-1 mb-0">
+                                                                    <input type="radio" id="inlineRadio4" value="option1" name="radioInline" onclick="show2();">
+                                                                    <label for="inlineRadio4"> For the following teams <i class="mdi mdi-help-circle text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Team financial controllers can only upload, approve and distribute credit amongst the primary team and sub teams they control."></i></label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="div1" class="mb-3 mt-0 ml-3" style="display: none;">
+                                                              <select class="form-control select2-multiple wide 2" style="width: 380px;" data-toggle="select2" multiple data-placeholder="Choose teams...">
+                                                                        <optgroup label="Teams">
+                                                                            <option value="AK">Team 1</option>
+                                                                            <option value="HI">Team 2</option>
+                                                                        </optgroup>
+                                                                    </select>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    
+
+                                                    <div id="accordion" class="accordion">
+                                                        <div class="card p-0 mb-0 mt-2">
+                                                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                                                <a class="card-title text-primary">
+                                                                    Optional details
+                                                                </a>
+                                                            </div>
+                                                            <div id="collapseOne" class="card-body collapse p-0" data-parent="#accordion" >
+
+                                                                <form>
+                                                                    <div class="form-group mb-3">
+                                                                        <label for="simpleinput">Who is this person's line manager?</label>
+                                                                            <a>
+                                                                                <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="We know that not all team managers are also an employee's direct line manager. We allow you to keep track of the line manager relationships in your business, so you have more control over who can see feedback and data from our pulse surveys." data-original-title="">
+                                                                                  <u>What's this for?</u>
+                                                                                </small>
+                                                                            </a>
+                                                                            <select class="wide" data-plugin="customselect">
+                                                                                <option value="0">Choose manager</option>
+                                                                                <option value="3">Team Manager 1</option>
+                                                                                <option value="1">Team Manager 2</option>
+                                                                                <option value="2">Team Manager 3</option>
+                                                                                <option value="4">Team Manager 4</option>
+                                                                            </select>
+                                                                            <div class="clearfix"></div>
+                                                                    </div>
+
+                                                                    <div class="form-group mb-3">
+                                                                        <label for="simpleinput">Office location</label>
+                                                                            <a>
+                                                                                <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="Allows you to keep track of your various offices or locations without needing to set up a team. This will help you to reward, recognise and create benefits for different locations in bulk, plus give you more options for comparing data from your pulse surveys." data-original-title="">
+                                                                                  <u>What's this for?</u>
+                                                                                </small>
+                                                                            </a>
+                                                                            <select class="wide" data-plugin="customselect">
+                                                                                <option value="0">Choose location(s)</option>
+                                                                                <option value="3">Location 1</option>
+                                                                                <option value="1">Location 2</option>
+                                                                            </select>
+                                                                            <div class="clearfix"></div>
+                                                                    </div>
+
+                                                                    <div class="form-group mb-3">
+                                                                        <label for="simpleinput">Job title</label>
+                                                                            <a>
+                                                                                <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="This will help you to reward and recognise specific job roles within your organisation, plus give you more options for comparing data from your pulse surveys." data-original-title="">
+                                                                                  <u>What's this for?</u>
+                                                                                </small>
+                                                                            </a>
+                                                                            <select class="wide" data-plugin="customselect" placeholder="Choose job title">
+                                                                                <option value="0">Choose job title</option>
+                                                                                <option value="3">Job title 1</option>
+                                                                                <option value="1">Job title 2</option>
+                                                                                <option value="2">Job title 3</option>
+                                                                            </select>
+                                                                            <div class="clearfix"></div>
+                                                                    </div>
+
+                                                                </form>
+
+                                                                <div class="form-group mb-3">
+                                                                     <div class="form-group mb-3">
+                                                                        <label>{Company name} start date</label>
+                                                                        <a>
+                                                                        <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="The date that your employee joined your company might be different to the day they were added to Perkbox. Storing this will help you compare your survey results based on tenure to see how things change over time." data-original-title="">
+                                                                          <u>What's this for?</u>
+                                                                        </small>
+                                                                    </a>
+                                                                        <input type="text" id="basic-datepicker" class="form-control" placeholder="Choose start date" data-date-autoclose="true">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group mb-2">
+                                                                    <label for="simpleinput">{Company name} identifier</label>
+                                                                    <a>
+                                                                        <small id="passwordHelpInline" class="text-muted float-right" data-toggle="popover" data-placement="top" data-content="We know that you might have your own identifier such as a payroll or employee number to identify your employees. Storing this helps you to compare your Perkbox users to your other management systems and not need to rely on names or email addresses, which can be changed." data-original-title="">
+                                                                          <u>What's this for?</u>
+                                                                        </small>
+                                                                    </a>
+                                                                    <input type="text" id="simpleinput" class="form-control" placeholder="Unique company identifier">
+                                                                </div>
+
+
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <button type="button" class="btn btn-block btn-primary waves-effect waves-light mb-2 mt-2" data-toggle="modal" data-target="#myModal">Send invite</button>
+
+                                                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title" id="myModalLabel">Send invite</h4>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="form-group mb-2">
+                                                                        <label for="example-email">When would you like to send the invite? <i class="mdi mdi-help-circle text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="If you choose to send your invite later, your users won't receive their welcome email from us until this date."></i></label> 
+                                                                        <div class="radio radio-primary mb-2 ml-1 mt-1">
+                                                                            <input type="radio" name="radio" id="radio3" value="igotnone" onclick="show3();" checked>
+                                                                            <label for="radio3">
+                                                                                Immediately
+                                                                            </label>
+                                                                        </div>
+
+                                                                         <div class="radio radio-primary mb-2 ml-1">
+                                                                            <input type="radio" name="radio" id="radio4" value="igottwo" onclick="show4();">
+                                                                            <label for="radio4">
+                                                                                On the following date
+                                                                            </label>
+                                                                            <div id="div3" style="display: none">
+                                                                              <div class="form-group mb-3 mt-2">
+                                                                                 <div class="form-group mb-3">
+                                                                                    <input type="text" id="basic-datepicker1" class="form-control" placeholder="Choose invite date" data-date-autoclose="true">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <%= link_to admin_path(page: :managecompany) do %>
+                                                                        <button type="button" class="btn btn-primary waves-effect waves-light">Send invite</button>
+                                                                    <% end %>
+                                                                </div>
+                                                            </div>
+                        <!-- /.modal-content -->
+                                                        </div>
+                        <!-- /.modal-dialog -->
+                                                    </div>
+<!-- /.modal -->
+
+                                                                                                       
+
+                                                </form>
+                                            </div> <!-- end col -->
+
+                                            
+                                        </div>
+
+                                         
+
+                                    </div>
+                                </div>   <!-- end card-box--> 
+                            </div>
+                            <div class="col-lg-4 d-none d-xl-block"> 
+
+                                <div class="card card-body text-xs-right ">
+                                    <h3 class="card-title">Invite users in bulk <small id="passwordHelpInline" class="text-muted float-right mt-1" data-toggle="popover" data-placement="top" data-content="Here's an instructional video/text." data-original-title="">
+                                                                          <u>Need help?</u>
+                                                                        </small></h3>
+                                    <p class="card-text">Use <a href="#">this CSV template</a> to upload your users in bulk. <a>
+                                                                
+                                                                    </a></p>
+
+                                    <form action="/" method="post" class="dropzone" id="myAwesomeDropzone">
+                                        <div class="dz-message needsclick">
+                                            <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                            <h4>Drag and drop your CSV file here to import your users.</h4>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="card card-body text-xs-right">
+                                    <h3 class="card-title">Sync with your HR System</h3>
+                                    <p class="card-text">Sync Perkbox with your HR system to effortlessly manage your users.</p>
+                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect waves-light">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+
+                <br>
+            </div>
+            <div class="tab-pane" id="messages-b1">
+                <div class="card subtle shadow-sm p-1 mb-5 bg-white rounded d-none d-lg-block">
+                    <div class="card-body text-secondary">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <form class="form-inline">
+                                
+                                    <div class="form-group">
+
+
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary waves-effect waves-light active"><i class="fas fa-list"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary waves-effect waves-light mr-2"><i class="fas fa-sitemap"></i></button>
+                                        </div>
+
+                                        
+                                        
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fe-search noti-icon"></i></div>
+                                            </div>
+                                            <input type="search" class="form-control" id="inputPassword2" placeholder="Search...">
+                                        </div>
+
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-lg-right mt-3 mt-lg-0">
+                                   
+                                    <%= link_to admin_path(page: :addteamcompany) do %>
+                                        <button type="button" class="btn btn-primary waves-effect waves-light">Create new team <i class="fe-plus"></i></button>
+                                    <% end %>
+                                    
+
+                                </div>
+                            </div><!-- end col-->
+                        </div>
+
+
+                    <div id="myDIV2" style="display: none;">
+                        <div class="row mt-2">
+                            <div class="col-lg-12">
+                                <form class="form-inline">
+                                
+                                    <div class="form-group">
+                                        
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Teams <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Option</a>
+                                                <a class="dropdown-item" href="#">Option</a>
+                                                <a class="dropdown-item" href="#">Option</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Roles <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Global admin</a>
+                                                <a class="dropdown-item" href="#">Global financial controller</a>
+                                                <a class="dropdown-item" href="#">Restricted admin</a>
+                                                <a class="dropdown-item" href="#">Team financial controller</a>
+                                            </div>
+                                        </div>
+
+                                         <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Invite sent <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Yes</a>
+                                                <a class="dropdown-item" href="#">No</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-group mr-2">
+                                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activation status <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                                                <a class="dropdown-item" href="#">Activated</a>
+                                                <a class="dropdown-item" href="#">Pending</a>
+                                                <a class="dropdown-item" href="#">Deactivated</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- end col-->
+                    </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mt-2 mt-lg-2">
+
+                                <div id="dvPassport" style="display: none">   
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="small">(20 People)</span> <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                            <a class="dropdown-item" href="#">Reward</a>
+                                            <a class="dropdown-item" href="#">Benefit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Deactivate</a>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div id="dvPassport11" style="display: none">   
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="small">(1 Person)</span> <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Shout-out</a>
+                                            <a class="dropdown-item" href="#">Reward</a>
+                                            <a class="dropdown-item" href="#">Benefit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Deactivate</a>
+                                        </div>
+                                    </div>
+                                </div> 
+
+
+
+
+                                </div>
+                            </div><!-- end col-->
+
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                            <div class="table-responsive mt-3">
+                                <table class="table table-borderless table-centered table-hover m-0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Team Name <i class="dripicons-chevron-down ml-3"></i></th>
+                                            <th>Manager Name <i class="dripicons-chevron-down ml-3"></i></th>
+                                            <th>Engagement Score <i class="dripicons-chevron-down ml-3"></i></th>
+                                            <th>Credit <i class="dripicons-chevron-down ml-3"></i></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1">
+                                            <td><i class="fas fa-angle-down text-primary"></i></td>
+                                            <td class="">
+                                                <%= link_to admin_path(page: :manageteam) do %>
+                                                    <h5 class="m-0 font-weight-normal text-default">Team Name</h5>
+                                                <% end %>
+                                            </td>
+                                            <td>Manager Name</td>  
+                                            <td>3/5</td>
+                                            <td><i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300</td>
+                                            <td>
+                                                <div class="btn-group float-right">
+                                                    <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Shout-out</a>
+                                                        <a class="dropdown-item" href="#">Reward</a>
+                                                        <a class="dropdown-item" href="#">Benefit</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody id="group-of-rows-1" class="collapse">
+                                        <tr class="ml-3">
+                                            <td></td>
+                                            <td class="pl-4">
+                                                <%= link_to admin_path(page: :manageteam) do %>
+                                                    <h5 class="m-0 font-weight-normal text-default">Sub Team 1</h5>
+                                                <% end %>
+                                            </td>
+                                            <td>Manager Name</td>  
+                                            <td>3/5</td>
+                                            <td><i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300</td>
+                                            <td>
+                                                <div class="btn-group float-right">
+                                                    <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Shout-out</a>
+                                                        <a class="dropdown-item" href="#">Reward</a>
+                                                        <a class="dropdown-item" href="#">Benefit</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="pl-4">
+                                                <%= link_to admin_path(page: :manageteam) do %>
+                                                    <h5 class="m-0 font-weight-normal text-default">Sub Team 2</h5>
+                                                <% end %>
+                                            </td>
+                                            <td>Manager Name</td>  
+                                            <td>3/5</td>
+                                            <td><i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300</td>
+                                            <td>
+                                                <div class="btn-group float-right">
+                                                    <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Shout-out</a>
+                                                        <a class="dropdown-item" href="#">Reward</a>
+                                                        <a class="dropdown-item" href="#">Benefit</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-2" aria-expanded="false" aria-controls="group-of-rows-2">
+                                            <td><i class="fas fa-angle-down text-primary"></i></td>
+                                            <td>Team Name</td>
+                                            <td>Manager Name</td>  
+                                            <td>3/5</td>
+                                            <td><i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300</td>
+                                            <td>
+                                                <div class="btn-group float-right">
+                                                    <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Shout-out</a>
+                                                        <a class="dropdown-item" href="#">Reward</a>
+                                                        <a class="dropdown-item" href="#">Benefit</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody id="group-of-rows-2" class="collapse">
+                                        <tr>
+                                            <td></td>
+                                            <td class="pl-4">Sub Team 1</td>
+                                            <td>Manager Name</td>  
+                                            <td>3/5</td>
+                                            <td><i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300</td>
+                                            <td>
+                                                <div class="btn-group float-right">
+                                                    <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Shout-out</a>
+                                                        <a class="dropdown-item" href="#">Reward</a>
+                                                        <a class="dropdown-item" href="#">Benefit</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="pl-4">Sub Team 2</td>
+                                            <td>Manager Name</td>  
+                                            <td>3/5</td>
+                                            <td><i class="fa fa-diamond text-primary" aria-hidden="true"></i> 300</td>
+                                            <td>
+                                                <div class="btn-group float-right">
+                                                    <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give... <i class="mdi mdi-chevron-down"></i></button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Shout-out</a>
+                                                        <a class="dropdown-item" href="#">Reward</a>
+                                                        <a class="dropdown-item" href="#">Benefit</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                                
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    
+
+                    <div class="row">
+                        <div class="col-12">
+                        <nav>
+                            
+                        </nav>
+                    </div>
+                    </div>
+                </div> <!-- end team management-->
+            </div>
+            <div class="tab-pane" id="give-b1">
+                <div class="card subtle">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Benefits & Rewards</h5>
+                        <p class="card-text">This is where you can manage companywide benefits and rewards from.</p>
+                    </div>
+                </div> <!-- end card-box-->
+            </div>
+        </div>            
+    </div> <!-- end container -->
+</div><%- content_for :footer_js do %>
+  
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-toast/jquery.toast.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/toastr.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-pickers.init.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-knob/jquery.knob.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-sparkline/jquery.sparkline.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.resize.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.time.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.tooltip.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.selection.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.crosshair.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/dashboard-1.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-nice-select/jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/switchery/switchery.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/autocomplete/jquery.autocomplete.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/dropzone/dropzone.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/dropify/dropify.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-fileuploads.init.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/clockpicker/bootstrap-clockpicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-datepicker/bootstrap-datepicker.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-pickers.init.js', 'data-turbolinks-track': 'reload' %>
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#checkbox2").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport1").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport1").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkbox4").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport2").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport2").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+     $(function () {
+        $("#checkbox3").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport3").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#dvPassport3").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
+
+
+    function show3(){
+  document.getElementById('div3').style.display ='none';
+}
+function show4(){
+  document.getElementById('div3').style.display = 'block';
+}
+
+$(function() {
+    $("body").delegate("#basic-datepicker1", "focusin", function(){
+        $(this).datepicker();
+    });
+});
+
+
+function show1(){
+  document.getElementById('div1').style.display ='none';
+}
+function show2(){
+  document.getElementById('div1').style.display = 'block';
+}
+
+
+
+</script>
+
+<% end %>

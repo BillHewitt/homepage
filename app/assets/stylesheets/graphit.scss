@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-MediumItalic.eot");
+  src: local("Graphit Medium Italic"), local("Graphit-MediumItalic"),
+    font-url("graphit/Graphit-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    font-url("graphit/Graphit-MediumItalic.woff2") format("woff2"),
+    font-url("graphit/Graphit-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-RegularItalic.eot");
+  src: local("Graphit Regular Italic"), local("Graphit-RegularItalic"),
+    font-url("graphit/Graphit-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    font-url("graphit/Graphit-RegularItalic.woff2") format("woff2"),
+    font-url("graphit/Graphit-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-Bold.eot");
+  src: local("Graphit Bold"), local("Graphit-Bold"),
+    font-url("graphit/Graphit-Bold.eot?#iefix") format("embedded-opentype"),
+    font-url("graphit/Graphit-Bold.woff2") format("woff2"),
+    font-url("graphit/Graphit-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-Thin.eot");
+  src: local("Graphit Thin"), local("Graphit-Thin"),
+    font-url("graphit/Graphit-Thin.eot?#iefix") format("embedded-opentype"),
+    font-url("graphit/Graphit-Thin.woff2") format("woff2"),
+    font-url("graphit/Graphit-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-Light.eot");
+  src: local("Graphit Light"), local("Graphit-Light"),
+    font-url("graphit/Graphit-Light.eot?#iefix") format("embedded-opentype"),
+    font-url("graphit/Graphit-Light.woff2") format("woff2"),
+    font-url("graphit/Graphit-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-BlackItalic.eot");
+  src: local("Graphit Black Italic"), local("Graphit-BlackItalic"),
+    font-url("graphit/Graphit-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    font-url("graphit/Graphit-BlackItalic.woff2") format("woff2"),
+    font-url("graphit/Graphit-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-Regular.eot");
+  src: local("Graphit Regular"), local("Graphit-Regular"),
+    font-url("graphit/Graphit-Regular.eot?#iefix") format("embedded-opentype"),
+    font-url("graphit/Graphit-Regular.woff2") format("woff2"),
+    font-url("graphit/Graphit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-BoldItalic.eot");
+  src: local("Graphit Bold Italic"), local("Graphit-BoldItalic"),
+    font-url("graphit/Graphit-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    font-url("graphit/Graphit-BoldItalic.woff2") format("woff2"),
+    font-url("graphit/Graphit-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-Medium.eot");
+  src: local("Graphit Medium"), local("Graphit-Medium"),
+    font-url("graphit/Graphit-Medium.eot?#iefix") format("embedded-opentype"),
+    font-url("graphit/Graphit-Medium.woff2") format("woff2"),
+    font-url("graphit/Graphit-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-LightItalic.eot");
+  src: local("Graphit Light Italic"), local("Graphit-LightItalic"),
+    font-url("graphit/Graphit-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    font-url("graphit/Graphit-LightItalic.woff2") format("woff2"),
+    font-url("graphit/Graphit-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-Black.eot");
+  src: local("Graphit Black"), local("Graphit-Black"),
+    font-url("graphit/Graphit-Black.eot?#iefix") format("embedded-opentype"),
+    font-url("graphit/Graphit-Black.woff2") format("woff2"),
+    font-url("graphit/Graphit-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: font-url("graphit/Graphit-ThinItalic.eot");
+  src: local("Graphit Thin Italic"), local("Graphit-ThinItalic"),
+    font-url("graphit/Graphit-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    font-url("graphit/Graphit-ThinItalic.woff2") format("woff2"),
+    font-url("graphit/Graphit-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
