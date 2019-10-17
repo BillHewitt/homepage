@@ -35,14 +35,273 @@ span.ml-2.bill:hover {
     <div class="wrapper">
         <div class="container">
             <span class="d-lg-block">
+
+
+    
                 
                 <div class="row mb-2 mt-2">
-                    <div class="col-12">
+                    <div class="col-6">
                         <h1 class="mb-3 mt-2" style="font-family: dosis; font-weight: 500;">Welcome back, <span class="underline">Jane</span>
                         </h1>
                     </div>
+                    <div class="col-6">
+
+                        <div class="custom-control custom-switch float-right mt-2">
+                            <input type="checkbox" id="check" onclick="Check()" class="custom-control-input">
+                            <label class="custom-control-label" for="check">Preview your employee's homepage</label>
+                        </div>
+
+                    </div>
+
+                     
+                        
+
                 </div>
 
+           
+        <div id="div1">
+            <div id = "3" style="display:block">
+                <div class="row mt-3 mb-4">
+                    <div class="col-lg-12"> 
+                        
+                        <div class="row mt-3">
+                            <div class="col-lg-12">
+                                <a href="#">
+                                    <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                        <div class="card-body">
+                                            <h3 class="card-title mb-3" style="font-family: dosis;">Admin</h3>
+                                            <p style="color: #3D3D36;"><i>Show the most relevent admin tasks for people to do. If still in setup mode. Drive people back into the setup flow</i></p>
+                                        
+                                                <div class="row mt-2" style="margin-bottom: -20px;">
+                                                    <div class="col-lg-7">
+                                                       
+                                                    </div>
+                                                     <div class="col-lg-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3" style="font-family: dosis;">Insights</h3>
+                                        <p style="color: #3D3D36;"><i>Show the relevent insights scores</i></p>
+                                    
+                                            <div class="row mt-2" style="margin-bottom: -20px;">
+                                                <div class="col-lg-7">
+                                                    
+                                                </div>
+                                                 <div class="col-lg-5">
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3" style="font-family: dosis;">Reward & Recognition</h3>
+                                            <p style="color: #3D3D36;"><i>Show the most r&r activity</i></p>
+                                    
+                                            <div class="row mt-2" style="margin-bottom: -20px;">
+                                                <div class="col-lg-7">
+                                                    
+                                                </div>
+                                                 <div class="col-lg-5">
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3" style="font-family: dosis;">Perks</h3>
+                                        <p style="color: #3D3D36;"><i>Show the most relevent perks</i></p>
+                                    
+                                            <div class="row mt-2" style="margin-bottom: -20px;">
+                                                <div class="col-lg-7">
+                                                    
+                                                </div>
+                                                 <div class="col-lg-5">
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                 
+
+
+             <div class="row mt-2">
+                    <div class="col-lg-6">
+                        <h3 style="font-family: dosis">Company news</h3>
+                    </div>
+            </div>
+
+
+
+            <div id = "div5" style="display:block">
+                <div class="row mt-2">
+                    <div class="col-lg-12">
+                        <div class="card card-body text-center" style="border-style: dashed; border-width: 1px; border-color: #adada2;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <h3 class="card-title mb-2 pt-3" style="font-family: dosis;">Got important news to share with your company?</h3>
+                                    <p>Add a link or video to your employee's homepage. It's a great way to share your culture and what makes you great!</p>
+                                        <button onclick="replace();return false"/ type="button" class="btn btn-warning waves-effect waves-light mt-2 mb-5" style="color: #3D3D36">Add link or video</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "div6" style="display:none">
+                <div class="row mt-2">
+                    <div class="col-lg-4">
+                        <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <i class="fas fa-plus mt-5"></i> 
+                                    <p class="mb-5 mt-2">Add link or video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <i class="fas fa-plus mt-5"></i> 
+                                    <p class="mb-5 mt-2">Add link or video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
+                            <div class="card-body">
+                                <div class="mx-auto">
+                                    <i class="fas fa-plus mt-5"></i> 
+                                    <p class="mb-5 mt-2">Add link or video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <a href="" class="btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">Cancel</a>
+                    </div>
+                </div>
+            </div>
+
+
+                </div>
+
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="padding: 0px;">
+                                <ul class="nav nav-tabs nav-bordered">
+                                    <li class="nav-item" style="margin-left: 20px;">
+                                        <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                            <h4>Add link</h4>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                            <h4>Add video</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button type="button" class="close" data-dismiss="modal" class="float-right" aria-hidden="true" style="margin-top: 2px; margin-right: 25px;">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home-b1">
+                                        <div class="row">
+                                            <div class="col-lg-6"> 
+                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" style="height: 245px">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple>
+                                                    </div>
+                                                    <div class="dz-message needsclick">
+                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                                        <p>Upload your image</p>
+                                                    </div>
+                                                </form>                                   
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="simpleinput">Link URL</label>
+                                                    <input type="text" id="simpleinput" class="form-control">
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="example-textarea">Description</label>
+                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show" id="profile-b1">
+                                        <div class="row">
+                                            <div class="col-lg-6"> 
+                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" style="height: 245px">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple>
+                                                    </div>
+                                                    <div class="dz-message needsclick">
+                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                                        <p>Upload a thumbnail for your video</p>
+                                                    </div>
+                                                </form>                                   
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="simpleinput">Video URL</label>
+                                                    <input type="text" id="simpleinput" class="form-control">
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="example-textarea">Description</label>
+                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" class="btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">Save as draft</a>
+                                <a href="" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36" id="btn-archive">Save and publish</a>
+                            </div>
+                        </div>
+<!-- /.modal-content -->
+                    </div>
+<!-- /.modal-dialog -->
+                </div>
+
+
+        <div id="div3" style="display:none">
             <div id = "3" style="display:block">
                 <div class="row mt-3 mb-4">
                     <div class="col-lg-12"> 
@@ -192,7 +451,7 @@ span.ml-2.bill:hover {
                         </div>  
                     </div>
 
-                     <div class="row mt-2">
+                <div class="row mt-2">
                     <div class="col-lg-6">
                         <h3 style="font-family: dosis">Company news</h3>
                     </div>
@@ -226,7 +485,7 @@ span.ml-2.bill:hover {
 
 
 
-            <div id = "div1" style="display:none">
+            <div id = "div5" style="display:none">
                 <div class="row mt-2">
                     <div class="col-lg-12">
                         <div class="card card-body text-center" style="border-style: dashed; border-width: 1px; border-color: #adada2;">
@@ -242,7 +501,7 @@ span.ml-2.bill:hover {
                 </div>
             </div>
 
-            <div id = "div2" style="display:none">
+            <div id = "div6" style="display:none">
                 <div class="row mt-2">
                     <div class="col-lg-4">
                         <div class="card card-body text-center bill" data-toggle="modal" data-target="#myModal" style="background-color: #f5f5f5;">
@@ -289,92 +548,13 @@ span.ml-2.bill:hover {
                     
                 </div>
             </div>
+        </div>
 
 
             
 
 
-                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header" style="padding: 0px;">
-                                <ul class="nav nav-tabs nav-bordered">
-                                    <li class="nav-item" style="margin-left: 20px;">
-                                        <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link active">
-                                            <h4>Add link</h4>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
-                                            <h4>Add video</h4>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <button type="button" class="close" data-dismiss="modal" class="float-right" aria-hidden="true" style="margin-top: 2px; margin-right: 25px;">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="home-b1">
-                                        <div class="row">
-                                            <div class="col-lg-6"> 
-                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" style="height: 245px">
-                                                    <div class="fallback">
-                                                        <input name="file" type="file" multiple>
-                                                    </div>
-                                                    <div class="dz-message needsclick">
-                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                                        <p>Upload your image</p>
-                                                    </div>
-                                                </form>                                   
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group mb-3">
-                                                    <label for="simpleinput">Link URL</label>
-                                                    <input type="text" id="simpleinput" class="form-control">
-                                                </div>
-                                                <div class="form-group mb-3">
-                                                    <label for="example-textarea">Description</label>
-                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
-                                                </div>                                      
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane show" id="profile-b1">
-                                        <div class="row">
-                                            <div class="col-lg-6"> 
-                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" style="height: 245px">
-                                                    <div class="fallback">
-                                                        <input name="file" type="file" multiple>
-                                                    </div>
-                                                    <div class="dz-message needsclick">
-                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                                        <p>Upload a thumbnail for your video</p>
-                                                    </div>
-                                                </form>                                   
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group mb-3">
-                                                    <label for="simpleinput">Video URL</label>
-                                                    <input type="text" id="simpleinput" class="form-control">
-                                                </div>
-                                                <div class="form-group mb-3">
-                                                    <label for="example-textarea">Description</label>
-                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
-                                                </div>                                      
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="" class="btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">Save as draft</a>
-                                <a href="" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36" id="btn-archive">Save and publish</a>
-                            </div>
-                        </div>
-<!-- /.modal-content -->
-                    </div>
-<!-- /.modal-dialog -->
-                </div>
+                
 
                 <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -406,17 +586,33 @@ span.ml-2.bill:hover {
 <script> 
 function replace() { 
 document.getElementById("div1").style.display="none"; 
-document.getElementById("div2").style.display="block"; 
+document.getElementById("div3").style.display="block"; 
+} 
+
+x=false;
+function Check(){
+    if(x){    
+document.getElementById("div1").style.display='inline';
+document.getElementById("div3").style.display='none';
+x=false;
+    }
+    else{
+ document.getElementById("div1").style.display='none'; 
+     document.getElementById("div3").style.display='inline';   
+x=true;    
+    }
+
+}
+
+function replace() { 
+document.getElementById("div5").style.display="none"; 
+document.getElementById("div6").style.display="block"; 
 } 
 
 
 
-
-
-
-
-
 </script>
+
 
 
 
