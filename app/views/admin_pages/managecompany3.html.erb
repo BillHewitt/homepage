@@ -28,6 +28,58 @@ span.ml-2.bill:hover {
     cursor: pointer;
 }
 
+.ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px
+}
+.ribbon {
+    font-size: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Montserrat Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: .05em;
+    line-height: 15px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    right: -11px;
+    top: 10px;
+    width: 100px;
+    height: 28px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    background-color: #3D3D36;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdedede', GradientType=0)
+}
+
+.ribbon:before,
+.ribbon:after {
+    content: "";
+    border-top: 3px solid #9e9e9e;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px
+}
+
+.ribbon:before {
+    left: 0
+}
+
+.ribbon:after {
+    right: 0
+}
+
 </style>
 
 <% end %>
@@ -207,7 +259,12 @@ span.ml-2.bill:hover {
                             </div>
 
                             <div class="col-lg-4">
-                                <div class="text-center card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="text-center card bill grey" style="border-style: dashed;
+border-width: 1px;
+border-color: #adada2; background-color: #efefef;">
+                                    <div class="ribbon-wrapper">
+                                        <div class="ribbon"><i class="fas fa-lock"></i> Unlock</div>
+                                    </div>
                                     <div class="pt-4 pb-2">
                                         <img src="/template-assets/images/users/Insights.png" class="rounded-circle img-thumbnail avatar-md" alt="profile-image">
 
