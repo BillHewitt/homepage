@@ -264,7 +264,7 @@ border-width: 0px;
 border-color: #adada2; background-color: #efefef;">
                                 <div class="row" style="margin-bottom: -25px;">
                                     <div class="col-lg-6">
-                                        <p class="float-left mt-0 mb-0 ml-2 mt-1"><i class="fas fa-close" style="color: #888;"></i></p>
+                                        <p class="float-left mt-0 mb-0 ml-2 mt-1" data-toggle="modal" data-target="#myModal2"><i class="fas fa-close" style="color: #888;"></i></p>
                                     </div>
                                     <div class="col-lg-6">
                                     </div>
@@ -688,19 +688,25 @@ border-color: #adada2; background-color: #efefef;">
 
                 
 
-                <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel">Hide Insights from homepage</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                         </div>
                                         <div class="modal-body">
-                                            <h4>Are you sure you want to hide your task bar?</h4>
-                                            <p>We'll still send you notifications
+                                            <p>We understand, no hard feelings. Please confirm if you're still ok with us emailing you occassional promotional material about new products when they arrive?</p>
+                                            <div class="checkbox mb-2">
+                                                <input id="checkbox0" type="checkbox">
+                                                <label for="checkbox0">
+                                                    Yes, I confirm
+                                                </label>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-light waves-effect" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                                            <button type="button" class="btn btn-light waves-effect" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36;">Hide Insights</button>
                                         </div>
                                     </div><!-- /.modal-content -->
                                 </div>
