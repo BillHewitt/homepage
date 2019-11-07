@@ -419,7 +419,7 @@ border-color: #adada2; background-color: #efefef;">
                     </div>
                     <div class="mx-auto">
                         <a href="" class="btn btn-light waves-effect waves-light" style="background-color: #fff; color: #3D3D36;" id="btn-archive">Cancel</a>
-                        <a href="" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36;" id="btn-archive">Add another row</a>
+                        <a href="" class="btn btn-warning waves-effect waves-light" data-toggle="modal" data-target="#myModal3" style="color: #3D3D36;" id="btn-archive">Add another row</a>
                     </div>
                 </div>
             </div>
@@ -879,6 +879,31 @@ border-color: #adada2; background-color: #efefef;">
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-light waves-effect" data-dismiss="modal" style="background-color: #fff; color: #3D3D36;">Cancel</button>
                                             <button type="button" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36;">Hide Insights</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+<!-- /.modal-dialog -->
+                </div>
+
+                <div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel">Add new row</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>How many columns would you like to add to your new row?</p>
+                                            <select class="custom-select ">
+                                                <option selected>Choose your number of columns</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light waves-effect" data-dismiss="modal" style="background-color: #fff; color: #3D3D36;">Cancel</button>
+                                            <button type="button" class="btn btn-warning waves-effect waves-light" style="color: #3D3D36;">Add row</button>
                                         </div>
                                     </div><!-- /.modal-content -->
                                 </div>
