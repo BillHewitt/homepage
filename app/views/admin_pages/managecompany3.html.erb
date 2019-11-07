@@ -894,12 +894,30 @@ border-color: #adada2; background-color: #efefef;">
                                         </div>
                                         <div class="modal-body">
                                             <p>How many columns would you like to add to your new row?</p>
-                                            <select class="custom-select ">
-                                                <option selected>Choose your number of columns</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="radio radio-primary mb-2">
+                                                        <input type="radio" name="radio" id="radio1" value="option1" checked>
+                                                        <label for="radio1">
+                                                            2 Columns
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="radio radio-primary mb-2">
+                                                        <input type="radio" name="radio" id="radio3" value="option3">
+                                                        <label for="radio3">
+                                                            3 Columns
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio radio-primary mb-2">
+                                                        <input type="radio" name="radio" id="radio4" value="option4">
+                                                        <label for="radio4">
+                                                            4 Columns
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div> <!-- end col -->
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-light waves-effect" data-dismiss="modal" style="background-color: #fff; color: #3D3D36;">Cancel</button>
