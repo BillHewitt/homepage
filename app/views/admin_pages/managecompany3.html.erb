@@ -92,10 +92,7 @@ span.ml-2.bill:hover {
 
                 <div class="row mb-0 mt-2">
                     <div class="col-12">
-                        <div class="custom-control custom-switch float-right mt-0">
-                            <input type="checkbox" id="check" onclick="Check()" class="custom-control-input">
-                            <label class="custom-control-label" for="check">Preview employee's homepage</label>
-                        </div>
+                        
                     </div>
                 </div>
     
@@ -106,8 +103,13 @@ span.ml-2.bill:hover {
                         </h1>
                     </div>
                     <div class="col-6">
-                        <a href="" class="btn btn-white waves-effect waves-light mt-2 float-right
-" style="color: #3D3D36; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); border-radius: 4px; padding-right: 30px; padding-left: 30px;">Reorder homepage</a>
+                        <div class="btn-group mb-0 mt-2 float-right">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <i class="mdi mdi-chevron-down"></i></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" id="check" onclick="Check()" href="#"><i class="fas fa-eye mr-1"></i> Preview employee's homepage</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-arrows-alt mr-1"></i> Re-order homepage</a>
+                            </div>
+                        </div>
                     </div>
 
                      
@@ -520,7 +522,7 @@ border-color: #adada2; background-color: #efefef;">
                 <div class="row">
                     <div class="col-lg-12">
                                 <div class="alert alert-secondary bg-secondary text-white border-0" role="alert" style="background-color: #b8b8ba !important;">
-                        Below is an example of what your employee's homepage will look like. Specific Perks shown may vary depending on their hobbies and preferences.
+                        This is an example of your employee's homepage. Specific Perks shown may vary depending on their hobbies and preferences. <a class="" id="check" onclick="Check()" href="#"> Exit preview</a>
                     </div>
                 </div>
             </div>
@@ -536,8 +538,8 @@ border-color: #adada2; background-color: #efefef;">
                     <div class="container">
                         <div class="row mt-3">
                             <div class="col-lg-3">
-                                <a href="#">
-                                    <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+
+                                    <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                         <img class="card-img-top img-fluid" src="/template-assets/images/nero.png" alt="Card image cap">
                                         <div class="card-body">
                                             <h3 class="card-title mb-3" style="font-family: dosis;">Your weekly coffee</h3>
@@ -552,11 +554,11 @@ border-color: #adada2; background-color: #efefef;">
                                                 </div>
                                         </div>
                                     </div>
-                                </a>
+                          
                             </div>
                              
                             <div class="col-lg-3">
-                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                     <img class="card-img-top img-fluid" src="/template-assets/images/odeon2.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h3 class="card-title mb-3" style="font-family: dosis;">Your monthly cinema</h3>
@@ -574,7 +576,7 @@ border-color: #adada2; background-color: #efefef;">
                             </div>
 
                             <div class="col-lg-3">
-                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                     <img class="card-img-top img-fluid" src="/template-assets/images/example.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h3 class="card-title mb-3" style="font-family: dosis;">Example Offer</h3>
@@ -592,7 +594,7 @@ border-color: #adada2; background-color: #efefef;">
                             </div>
 
                             <div class="col-lg-3">
-                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                     <img class="card-img-top img-fluid" src="/template-assets/images/example.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h3 class="card-title mb-3" style="font-family: dosis;">Example Offer</h3>
@@ -622,7 +624,7 @@ border-color: #adada2; background-color: #efefef;">
                         <div class="row mt-3 mb-4">
 
                             <div class="col-lg-12">
-                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                   <div class="row">
                                     <div class="col-lg-1 col-md-2 col-sm-2">
                                         <img src="/template-assets/images/users/P.png" class="" alt="product-logo" style="max-width: 90px; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
@@ -651,7 +653,7 @@ border-color: #adada2; background-color: #efefef;">
                             </div>
 
                             <div class="col-lg-12">
-                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                   <div class="row">
                                     <div class="col-lg-1 col-md-2 col-sm-2">
                                         <img src="/template-assets/images/users/R.png" class="" alt="product-logo" style="max-width: 90px; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
@@ -679,7 +681,7 @@ border-color: #adada2; background-color: #efefef;">
                                   </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="card bill" style="border: 1px solid rgba(0,0,0,.08);">
+                                <div class="card" style="border: 1px solid rgba(0,0,0,.08);">
                                   <div class="row">
                                     <div class="col-lg-1 col-md-2 col-sm-2">
                                         <img src="/template-assets/images/users/I.png" class="" alt="product-logo" style="max-width: 90px; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
